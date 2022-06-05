@@ -60,5 +60,40 @@ public class metodos {
             }
         }
     }   
+    public void mostrarCabeceras(){
+        for (int i=1; i<cabeceras.length; i++){
+        if(cabeceras[i]!=null){
+            System.out.println("Departamento====="+ cabeceras[i]);
+        }
+    }
+        System.out.println("");
+        for(String siguiente: cabeceras){
+            if(siguiente!=null){
+                
+            }
+        }
+    }
+    public void busquedaDapa(){
+        String buscador=null;
+        int pos=1;
+        int res=pos;
+        System.out.println("Imgrese el nombre del departamento que desea buscar");
+        buscador=scanner.next();
+        
+        while (pos<departamentos.length){
+            if(departamentos.equals(buscador)){
+                res=pos++;
+                   break;
+            }else{
+                pos++;
+            }
+        }if(res<=(departamentos.length+1)){
+            System.out.println("El departamento que ingreso: "+buscador+" esta posicionado en: "+res);   
+        }else{
+            System.out.println("El departamento que ingreso no se encuentra");
+        }
+        
+    }
+    }
 
 
