@@ -33,4 +33,43 @@ public class listas {
         cantidadMunicipios.add(muni);
         
     }
+    public void mostrarDepas(){
+        for (int i=1; i<Departamentos.size(); i++){
+            if(Departamentos !=null){
+        System.out.println("DEPARTAMENTOS "+Departamentos);
+        }
+        }
+        System.out.println("");
+        for (String siguiente : Departamentos){
+            if(siguiente !=null){
+                
+            }
+        }
+    }
+    public void mostrarMunicipios(){
+        for (int i=1; i<cantidadMunicipios.size(); i++){
+         if (cantidadMunicipios!=null){
+             System.out.println("Cantidad de municipios "+ cantidadMunicipios);
+         }
+        }
+        System.out.println("");
+        for (String siguiente : cantidadMunicipios){
+            if(siguiente !=null){
+                
+            }
+    }
+    }
+    public void mostrarCabeceras(){
+        for (int i=1; i<cabeceras.size(); i++){
+         if (cabeceras!=null){
+             System.out.println("Cabecera del departamento "+ cabeceras);
+         }
+        }
+        System.out.println("");
+        for (String siguiente : cabeceras){
+            if(siguiente !=null){
+                
+            }
+    }
+    }
 }
