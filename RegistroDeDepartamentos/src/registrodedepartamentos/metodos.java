@@ -28,5 +28,37 @@ public class metodos {
     inicio=inicio+1;
     municipios[inicio]= "Cantidad de municipios>>>>"+muni;
     }
+    public void cabeceras (){
+    System.out.println("Ingrese la cabecera del departamento");
+    String cabeceras1=scanner.next();
+    inicio=inicio+1;
+    cabeceras[inicio]= "Cabeceras>>>>"+cabeceras1;
+    }
+    public void mostrarDepartamentos(){
+        for (int i=1; i<departamentos.length; i++){
+        if(departamentos[i]!=null){
+            System.out.println("Departamento====="+ departamentos[i]);
+        }
+    }
+        System.out.println("");
+        for(String siguiente: departamentos){
+            if(siguiente!=null){
+                
+            }
+        }
+    }
+    public void mostrarMunicipios(){
+          for (int i=1; i<municipios.length; i++){
+        if(municipios[i]!=null){
+            System.out.println("Departamento====="+ municipios[i]);
+        }
+    }
+        System.out.println("");
+        for(String siguiente: municipios){
+            if(siguiente!=null){
+                
+            }
+        }
+    }   
 
 
