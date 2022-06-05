@@ -72,4 +72,35 @@ public class listas {
             }
     }
     }
+    public void vaciarDepas(){
+        Departamentos.clear();
+    }
+    public void vaciarMunicipios(){
+        cantidadMunicipios.clear();
+    }
+    public void vaciarCabeceras(){
+        cabeceras.clear();
+    }
+    
+    public void verificador(){
+        System.out.println("Ingrese el numero del departamento que desea buscar");
+        int buscador=scanner.nextInt();
+        int ubicacion= Departamentos.indexOf(buscador);
+        if(ubicacion<=noDepartamento.indexOf(ubicacion)){
+            System.out.println("Departamento >>> "+ Departamentos);
+        }
+            
+    }
+    
+    //registro de datos
+    public List<String> getDepartamentos(){
+        return Departamentos;
+    }
+     public List<String> getcantidadMunicipios(){
+     return cantidadMunicipios;
+    }
+      public List<String> getcabeceras(){
+        return cabeceras;
+    }
 }
+
